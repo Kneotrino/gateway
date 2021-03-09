@@ -1,0 +1,39 @@
+# Welcome to kneotrino github project
+
+Springboot microservice for employee database
+
+You can change the port configuration in appplication.properties
+
+## Before Run
+
+Please make sure your other microservice runs smoothly
+
+* microservice dependency (pegawai) [https://github.com/Kneotrino/employee]
+
+Please make sure your connection to another microservice runs smoothly
+
+## Default Value
+
+```
+server.port=8000
+
+# swagger config
+springdoc.api-docs.path=/api-docs
+springdoc.swagger-ui.path=/swagger-ui.html
+
+# employee micro-service
+service.employee.port=9100
+service.employee.url=http://127.0.0.1
+```
+
+## Front-End Test
+
+```
+http://[URL]:[PORT]/swagger-ui.index.html
+```
+
+### Example
+```
+http://127.0.0.1:8000/swagger-ui.index.html
+http://localhost:8000/swagger-ui.index.html
+```
